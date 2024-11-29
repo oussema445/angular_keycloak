@@ -1,0 +1,26 @@
+<img src="../assets/img/815912.png"   width="1515" height="220">
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <tr> <th>REf </th><th>nom de Piéce</th> <th>Model</th> <th>Prix</th> <th>Date de Mise</th>  </tr>
+                <thead>
+                    <tr>
+                        <th>Liste des Piéces</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let piece of pieces">
+                    <tr>
+                        <td>{{piece.idPiece}}</td>
+                        <td>{{piece.nomPiece}}</td>
+                        <td>{{piece.model}}</td>
+                        <td>{{piece.prixPiece}}</td>
+                        <td>{{piece.dateCreation | date:'dd/MM/yyyy'}}</td>
+                       
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
